@@ -9,6 +9,9 @@ import Register from '../pages/Register'
 import Tables from '../pages/Tables'
 import Charts from '../pages/Charts'
 import NotFound from '../pages/NotFound'
+import UserManagement from '../pages/UserManagement'
+import Settings from '../pages/Settings'
+import Help from '../pages/Help'
 
 const AppRoutes = ({ theme, toggleTheme }) => {
   return (
@@ -18,6 +21,9 @@ const AppRoutes = ({ theme, toggleTheme }) => {
         <Route index element={<Dashboard />} />
         <Route path="tables" element={<Tables />} />
         <Route path="charts" element={<Charts />} />
+        <Route path="users" element={<UserManagement />} />
+        <Route path="settings" element={<Settings />} />
+        <Route path="help" element={<Help />} />
       </Route>
       
       {/* Auth Routes */}
