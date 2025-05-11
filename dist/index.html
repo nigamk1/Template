@@ -10,5 +10,23 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function(w, d, s, o) {
+        w.HelpMateAI = o;
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(o.scriptId)) return;
+        js = d.createElement(s); js.id = o.scriptId;
+        js.src = "http://localhost:5000/widget.js";
+        js.async = 1;
+        fjs.parentNode.insertBefore(js, fjs);
+      }(window, document, 'script', {
+        scriptId: 'helpmate-widget',
+        apiKey: '70edcf3c6697e3aa245ab4a1d3e3426c',
+        position: 'bottom-right',
+        primaryColor: '#4F46E5',
+        chatTitle: 'Customer Support',
+        welcomeMessage: 'Hi there! How can I help you today?'
+      }));
+    </script>
   </body>
 </html>
